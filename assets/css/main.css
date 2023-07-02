@@ -4,7 +4,7 @@
 --bordercl:rebeccapurple;
 --callouctcolor:dodgerblue;
 --hovercolor:navy;
---darkMaincolor: #50fa7b;
+--darkMaincolor: #50fa7b; /* green underline */
 }
 html {
   color: #232333;
@@ -165,7 +165,7 @@ h6::before { color: var(--maincolor); content: '###### '; }
 footer {
   display: flex;
   align-items: center;
-  border-top: 0.4rem dotted var(--bordercl);
+  border-top: 0.2rem dotted var(--bordercl);
   padding: 2rem 0rem;
   margin-top: 2rem;
 }

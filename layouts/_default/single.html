@@ -1,5 +1,6 @@
 {{ define "main" }}
 <main>
+
 	<article>
 		<div class="title">
 			<h1 class="title">{{ .Title }}</h1>
@@ -10,6 +11,14 @@
 			<strong>tl;dr:</strong>
 			{{ .Params.tldr }}
 		</div>{{ end }}
+
+	<aside>
+	<hr>
+		Table of Contents:
+        {{ .TableOfContents }}
+	<hr>
+    </aside>
+
 
 		<section class="body">
 			{{ .Content }}
@@ -38,5 +47,8 @@
 		{{- partial "disqus.html" . -}}
 		{{- end -}}
 	</article>
+	
+
+	
 </main>
 {{ end }}
